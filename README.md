@@ -2,7 +2,7 @@
 
 This served as Portfolio website that will compile and showcase all my fun weekend projects-:
 
-Currently being this Astro site being hosted on GitHub Pages
+Currently this Astro site being hosted on GitHub Pages
 
 ## Built With
 
