@@ -1,11 +1,8 @@
 # Intro
 
 This served as Portfolio website that will compile and showcase all my fun weekend projects-:
+
 Currently being this Astro site being hosted on GitHub Pages
-
-
-## Preview
-
 
 ## Built With
 
@@ -13,12 +10,6 @@ Currently being this Astro site being hosted on GitHub Pages
 - **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
 - **[Tabler Icons](https://tabler.io/icons)** - Free and open source icons
 - **TypeScript** - For type-safe configuration
-
-## Updating the Template
-
-### Configuration
-
-
 
 
 ## Project Structure
