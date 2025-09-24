@@ -30,7 +30,7 @@ export const siteConfig = {
       name: "Kubernetes Intro",
       description:
         "Learning Kubernetes from scratch ",
-      link: "https://google.com",
+      link: "https://medium.com/@eizlan09/kubernetes-introduction-784e7c1724a4",
       skills: ["AWS", "Docker", "Kubernetes"],
     },
   ],
