@@ -1,5 +1,12 @@
 ---
 import { siteConfig } from "../config";
+
+// --- START FAULTY CODE FOR ESLINT CHECK ---
+// These lines are now in the frontmatter and should trigger errors
+const name = "test" 
+let unused = 5; // Should trigger 'no-unused-vars'
+console.log(undefinedVar); // Should trigger 'no-undef'
+// --- END FAULTY CODE ---
 ---
 
 <section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24">
@@ -38,6 +45,3 @@ import { siteConfig } from "../config";
     </div>
   </div>
 </section>
-const name = "test"
-let unused = 5;
-console.log(undefinedVar);
