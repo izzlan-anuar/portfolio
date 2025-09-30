@@ -11,7 +11,6 @@ Currently this Astro site being hosted on GitHub Pages
 - **[Tabler Icons](https://tabler.io/icons)** - Free and open source icons
 - **TypeScript** - For type-safe configuration
 
-
 ## Project Structure
 
 ```
