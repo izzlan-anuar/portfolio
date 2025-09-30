@@ -38,3 +38,13 @@ import { siteConfig } from "../config";
     </div>
   </div>
 </section>
+---
+// Missing semicolon
+const name = "test"
+const unused = "this variable is never used"
+
+// Undeclared variable
+console.log(undefinedVar)
+---
+
+<div>Test</div>
