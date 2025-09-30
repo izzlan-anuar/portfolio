@@ -1,13 +1,14 @@
 ---
 import { siteConfig } from "../config";
 
-// --- START FAULTY CODE FOR ESLINT CHECK ---
-// These lines are now in the frontmatter and should trigger errors
-const name = "test" 
-let unused = 5; // Should trigger 'no-unused-vars'
-console.log(undefinedVar); // Should trigger 'no-undef'
-// --- END FAULTY CODE ---
+// --- START CODE TO CAUSE ESLINT FAILURE ---
+const name = "test" // Missing semicolon (if 'semi' rule is enabled)
+let myVar;        // Declared but not used (should trigger 'no-unused-vars' error)
+let used = 5;
+used = 6;
+// --- END CODE TO CAUSE ESLINT FAILURE ---
 ---
+
 
 <section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24">
   <div>
