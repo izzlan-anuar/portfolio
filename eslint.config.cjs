@@ -12,31 +12,20 @@ module.exports = [
   {
     files: ['**/*.js', '**/*.mjs', '**/*.cjs', '**/*.ts', '**/*.tsx'],
     languageOptions: {
+      parser: tsParser,
       ecmaVersion: 'latest',
       sourceType: 'module',
-      globals: {
-        browser: true,
-        es2022: true,
-        node: true,
-      },
-    },
-  },
-
-  // TypeScript files
-  {
-    files: ['**/*.ts', '**/*.tsx'],
-    languageOptions: {
-      parser: tsParser,
     },
     plugins: {
       '@typescript-eslint': tsPlugin,
     },
     rules: {
-      '@typescript-eslint/no-unused-vars': 'warn',
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'error',
     },
   },
 
-  // Astro files - use the flat config
+  // Astro files
   {
     files: ['**/*.astro'],
     languageOptions: {
@@ -48,9 +37,12 @@ module.exports = [
     },
     plugins: {
       astro: eslintPluginAstro,
+      '@typescript-eslint': tsPlugin,
     },
     rules: {
       ...eslintPluginAstro.configs.recommended.rules,
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'error',
     },
   },
 ];
