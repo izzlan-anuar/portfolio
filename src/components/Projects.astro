@@ -1,5 +1,5 @@
 ---
-import { siteConfig } from "../config";
+import { siteConfig } from '../config';
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 ---
 
@@ -21,12 +21,12 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
           <div class="lg:col-span-8">
             <div class="space-y-8">
               {siteConfig.projects.map((project, index) => {
-                const Component = project.link ? "a" : "div";
+                const Component = project.link ? 'a' : 'div';
                 const linkProps = project.link
                   ? {
                       href: project.link,
-                      target: "_blank",
-                      rel: "noopener noreferrer",
+                      target: '_blank',
+                      rel: 'noopener noreferrer',
                     }
                   : {};
 
@@ -36,8 +36,8 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                       {...linkProps}
                       class={`block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 ${
                         project.link
-                          ? "hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
-                          : ""
+                          ? 'hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1'
+                          : ''
                       }`}
                     >
                       {project.link && (
@@ -82,7 +82,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                         {/* Description */}
                         <p
                           class={`text-base sm:text-lg text-gray-600 leading-relaxed ${
-                            project.link ? "pr-12 sm:pr-14 md:pr-16" : ""
+                            project.link ? 'pr-12 sm:pr-14 md:pr-16' : ''
                           }`}
                         >
                           {project.description}
@@ -94,7 +94,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                             {project.skills.map((skill) => (
                               <span
                                 class={`px-2.5 sm:px-3 py-1 sm:py-1.5 bg-gray-900 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 ${
-                                  project.link ? "group-hover:bg-gray-800" : ""
+                                  project.link ? 'group-hover:bg-gray-800' : ''
                                 }`}
                               >
                                 {skill}
