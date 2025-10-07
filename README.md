@@ -1,25 +1,25 @@
 # Portfolio — Izzlan Anuar
 
-This repository contains my personal portfolio website built with **Astro**. It serves as a platform to showcase my projects, document my growth, and continuously integrate modern tools into the workflow.
+This repository contains my personal portfolio website built with **Astro**. It showcases my projects, documents my growth, and evolves with continuous integration of modern tools.
 
 ---
 
-## Table of contents
+## Table of Contents
 
 * [About](#about)
-* [Tech stack](#tech-stack)
-* [CI/CD & checks](#cicd--checks)
+* [Tech Stack](#tech-stack)
+* [CI/CD & Checks](#cicd--checks)
 * [Integrations — Completed](#integrations--completed)
 
 ---
 
 ## About
 
-This project started as a personal portfolio and is now also a learning ground to experiment with frontend tools, CI/CD pipelines, and automation workflows — added gradually, one integration at a time.
+This project began as a personal portfolio and now serves as a hands-on playground to explore frontend development, CI/CD pipelines, and automation workflows — improved incrementally with each integration.
 
 ---
 
-## Tech stack
+## Tech Stack
 
 * **Framework:** Astro
 * **Language:** TypeScript
@@ -30,23 +30,23 @@ This project started as a personal portfolio and is now also a learning ground t
 
 ---
 
-## CI/CD & checks
+## CI/CD & Checks
 
-Automated workflows are powered by **GitHub Actions**, running on every pull request to verify that the code is linted, formatted, and build-ready before merging.
+Workflows are powered by **GitHub Actions**, triggered on pull requests to ensure code quality and deployment readiness.
 
-### Workflow overview
+### Workflow Overview
 
 1. **Lint & Format Check** — Runs ESLint and Prettier validation.
 2. **Build** — Compiles the Astro project.
-3. **Deploy** — Publishes to GitHub Pages upon successful checks.
+3. **Deploy** — Publishes to GitHub Pages once all checks pass.
 
 ---
 
 ## Integrations — Completed
 
-1. **ESLint** — Configured using flat config (`eslint.config.cjs`) with support for `.astro` and TypeScript files.
-2. **Prettier** — Ensures consistent formatting across all files, enforced via `prettier --check` during PR validation.
+1. **ESLint** — Configured using flat config (`eslint.config.cjs`) with `.astro` and TypeScript support.
+2. **Prettier** — Ensures consistent formatting across all files, enforced via `prettier --check` in PR validation.
 
 ---
 
-> *This README will be updated as new integrations are added.*
+> This README will be updated as new integrations are added.
