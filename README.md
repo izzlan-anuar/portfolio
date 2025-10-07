@@ -1,38 +1,52 @@
-# Intro
+# Portfolio — Izzlan Anuar
 
-This served as Portfolio website that will compile and showcase all my fun weekend projects-:
+This repository contains my personal portfolio website built with **Astro**. It showcases my projects, documents my growth, and evolves with continuous integration of modern tools.
 
-Currently this Astro site being hosted on GitHub Pages
+---
 
-## Built With
+## Table of Contents
 
-- **[Astro](https://astro.build/)** - Static site generator for modern web apps
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Tabler Icons](https://tabler.io/icons)** - Free and open source icons
-- **TypeScript** - For type-safe configuration
+* [About](#about)
+* [Tech Stack](#tech-stack)
+* [CI/CD & Checks](#cicd--checks)
+* [Integrations — Completed](#integrations--completed)
 
-## Project Structure
+---
 
-```
-devportfolio/
-├── public/
-│   └── favicon.svg          # Site favicon
-├── src/
-│   ├── components/          # Astro components
-│   │   ├── About.astro      # About section
-│   │   ├── Education.astro  # Education section
-│   │   ├── Experience.astro # Work experience section
-│   │   ├── Footer.astro     # Site footer
-│   │   ├── Header.astro     # Navigation header
-│   │   ├── Hero.astro       # Hero/intro section
-│   │   └── Projects.astro   # Projects showcase
-│   ├── pages/
-│   │   └── index.astro      # Main page layout
-│   ├── styles/
-│   │   └── global.css       # Global styles
-│   └── config.ts            # Site configuration
-├── astro.config.mjs         # Astro configuration
-├── package.json             # Project dependencies
-├── tailwind.config.js       # Tailwind configuration
-└── tsconfig.json            # TypeScript configuration
-```
+## About
+
+This project began as a personal portfolio and now serves as a hands-on playground to explore frontend development, CI/CD pipelines, and automation workflows — improved incrementally with each integration.
+
+---
+
+## Tech Stack
+
+* **Framework:** Astro
+* **Language:** TypeScript
+* **Hosting:** GitHub Pages
+* **CI/CD:** GitHub Actions
+* **Linting:** ESLint
+* **Formatting:** Prettier
+
+---
+
+## CI/CD & Checks
+
+Workflows are powered by **GitHub Actions**, triggered on pull requests to ensure code quality and deployment readiness.
+
+### Workflow Overview
+
+1. **Lint & Format Check** — Runs ESLint and Prettier validation.
+2. **Build** — Compiles the Astro project.
+3. **Deploy** — Publishes to GitHub Pages once all checks pass.
+
+---
+
+## Integrations — Completed
+
+1. **ESLint** — Configured using flat config (`eslint.config.cjs`) with `.astro` and TypeScript support.
+2. **Prettier** — Ensures consistent formatting across all files, enforced via `prettier --check` in PR validation.
+
+---
+
+> This README will be updated as new integrations are added.
