@@ -44,8 +44,28 @@ Workflows are powered by **GitHub Actions**, triggered on pull requests to ensur
 
 ## Integrations — Completed
 
-1. **ESLint** — Configured using flat config (`eslint.config.cjs`) with `.astro` and TypeScript support.
-2. **Prettier** — Ensures consistent formatting across all files, enforced via `prettier --check` in PR validation.
+### 1. ESLint — Linting and Code Quality
+
+ESLint helps maintain consistent code and catch potential issues early.  
+Configured with support for both **Astro** and **TypeScript** using a flat configuration (`eslint.config.cjs`).
+
+```bash
+# Check for linting issues
+npm run lint
+
+# Auto-fix most lint errors
+npm run lint -- --fix
+```
+
+### 2. **Prettier** — Ensures consistent formatting across all files, enforced via `prettier --check` in PR validation.
+
+```bash
+# Check formatting
+npx prettier --check .
+
+# Format all files
+npx prettier --write .
+```
 
 ---
 
