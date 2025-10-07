@@ -56,6 +56,7 @@ npm run lint
 # Auto-fix most lint errors
 npm run lint -- --fix
 ```
+
 ### 2. **Prettier** — Ensures consistent formatting across all files, enforced via `prettier --check` in PR validation.
 
 ```bash
@@ -65,6 +66,7 @@ npx prettier --check .
 # Format all files
 npx prettier --write .
 ```
+
 ---
 
 > This README will be updated as new integrations are added.
