@@ -1,5 +1,10 @@
 ---
-import { siteConfig } from '../config';
+import { siteConfig } from "../config";
+
+// Intentional ESLint errors for testing
+const unused = "this variable is never used";
+let anotherUnused = 42;
+const testVar;  // declared but not initialized or used
 ---
 
 <section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24">
