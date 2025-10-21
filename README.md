@@ -6,10 +6,10 @@ This repository contains my personal portfolio website built with **Astro**. It 
 
 ## Table of Contents
 
-* [About](#about)
-* [Tech Stack](#tech-stack)
-* [CI/CD & Checks](#cicd--checks)
-* [Integrations — Completed](#integrations--completed)
+- [About](#about)
+- [Tech Stack](#tech-stack)
+- [CI/CD & Checks](#cicd--checks)
+- [Integrations — Completed](#integrations--completed)
 
 ---
 
@@ -21,12 +21,12 @@ This project began as a personal portfolio and now serves as a hands-on playgrou
 
 ## Tech Stack
 
-* **Framework:** Astro
-* **Language:** TypeScript
-* **Hosting:** GitHub Pages
-* **CI/CD:** GitHub Actions
-* **Linting:** ESLint
-* **Formatting:** Prettier
+- **Framework:** Astro
+- **Language:** TypeScript
+- **Hosting:** GitHub Pages
+- **CI/CD:** GitHub Actions
+- **Linting:** ESLint
+- **Formatting:** Prettier
 
 ---
 
