@@ -1,0 +1,126 @@
+---
+// src/components/Certifications.astro
+// Certifications section component for portfolio
+
+interface Badge {
+  name: string;
+  organization: string;
+  date: string;
+  image: string;
+  credlyUrl: string;
+  expired?: boolean;
+}
+
+const badges: Badge[] = [
+  {
+    name: "Architecting on AWS",
+    organization: "Asia Pacific University",
+    date: "Dec 2021",
+    image: "https://images.credly.com/size/340x340/images/1e4f7b47-f7e4-47e4-b57e-fdfdde58774b/image.png",
+    credlyUrl: "https://www.credly.com/badges/e7106370-caf7-4576-9313-7372635c8568" // Replace with your actual badge URL
+  },
+  {
+    name: "Certified Cloud Solutions Architect",
+    organization: "Asia Pacific University",
+    date: "Dec 2021",
+    image: "https://images.credly.com/size/340x340/images/6549540b-04d5-44f7-814e-de5b93d49249/2021_Digital_Badges_Certified__Cloud_Solutions_Architect.png",
+    credlyUrl: "https://www.credly.com/badges/862779aa-beb2-4d61-97c8-69f9deca2304"
+  },
+  {
+    name: "Digital Thinking & Innovation",
+    organization: "Asia Pacific University",
+    date: "Nov 2021",
+    image: "https://images.credly.com/size/340x340/images/b3c74474-4d87-4087-8ab8-3f6ec5b4e8b7/2021_Digital_Badges_MicroCredential__Digital_Thinking___Innovation.png",
+    credlyUrl: "https://www.credly.com/badges/21b57341-69d0-47f9-8c7d-67397585ca14"
+  },
+  {
+    name: "Graduate Employability Programme",
+    organization: "Asia Pacific University",
+    date: "Nov 2021",
+    image: "https://images.credly.com/size/340x340/images/b3c74474-4d87-4087-8ab8-3f6ec5b4e8b7/2021_Digital_Badges_MicroCredential__Digital_Thinking___Innovation.png",
+    credlyUrl: "https://www.credly.com/badges/21b57341-69d0-47f9-8c7d-67397585ca14"
+  },
+  {
+    name: "AWS Academy Graduate - Cloud Foundations",
+    organization: "AWS Training",
+    date: "Oct 2021",
+    image: "https://images.credly.com/size/340x340/images/e3541a0c-dd4a-4820-8052-5001006efc85/blob",
+    credlyUrl: "https://www.credly.com/badges/325002d7-0d65-4658-9409-770deb0e14e9"
+  },
+  {
+    name: "Certified Data Analyst Associate",
+    organization: "Asia Pacific University",
+    date: "Oct 2021",
+    image: "https://images.credly.com/size/340x340/images/c823a453-c181-469d-a01b-0be377f12ce8/image.png",
+    credlyUrl: "https://www.credly.com/badges/ccb2459c-8b8d-441a-8479-ec516e5e1824"
+  },
+  {
+    name: "PCEP – Certified Entry-Level Python Programmer",
+    organization: "Python Institute",
+    date: "Sep 2021",
+    image: "https://images.credly.com/size/340x340/images/d8017c77-3cc0-4fdf-8e17-62e50632812e/bronze_1_small.png",
+    credlyUrl: "https://www.credly.com/badges/c7eeceac-f004-4f91-95ca-10de0f071727"
+  },
+  {
+    name: "Microsoft Certified: Power BI Data Analyst",
+    organization: "Microsoft",
+    date: "Oct 2023",
+    image: "https://images.credly.com/size/340x340/images/619f60f8-4f63-4772-910e-dc31c6f2f7e8/image.png",
+    credlyUrl: "https://www.credly.com/badges/290f53e6-ca10-43cd-8d2e-34017afc7cb4",
+    expired: true
+  }
+];
+---
+
+<section class="w-full max-w-6xl mx-auto px-4 py-20">
+  <div class="mb-12 text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-2">
+      Certifications
+    </h2>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {badges.map((badge) => (
+      <a
+        href={badge.credlyUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative bg-white border border-gray-200 rounded-xl p-6 hover:shadow-xl hover:border-blue-600 hover:-translate-y-1 transition-all duration-300"
+      >
+        <!-- Badge Image -->
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-50 border-2 border-gray-100 group-hover:border-blue-600 flex items-center justify-center overflow-hidden transition-all duration-300">
+          <img
+            src={badge.image}
+            alt={badge.name}
+            class="w-full h-full object-contain p-2"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Badge Details -->
+        <div class="text-center">
+          <h3 class="text-sm font-semibold text-gray-900 mb-2 min-h-[40px] flex items-center justify-center leading-tight">
+            {badge.name}
+          </h3>
+          <p class="text-xs text-gray-600 mb-3">
+            {badge.organization}
+          </p>
+          <div class="pt-3 border-t border-gray-100">
+            <p class={`text-xs ${badge.expired ? 'text-red-600 font-medium' : 'text-gray-500'}`}>
+              {badge.expired ? 'Expired ' : ''}{badge.date}
+            </p>
+          </div>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  /* Additional custom styles if needed */
+  @media (max-width: 768px) {
+    .group:hover .opacity-0 {
+      opacity: 1; /* Always show verify link on mobile */
+    }
+  }
+</style>
