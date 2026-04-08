@@ -10,7 +10,18 @@ export const siteConfig = {
   },
   aboutMe:
     'I love solving problems, automate things and learn new technologies but among all I prefer travelling the world',
-  skills: ['GCP', 'AWS', 'Azure', 'Python', 'Kubernetes', 'Docker', 'Linux', 'Incident Management', 'Observability', 'GitOps'],
+  skills: [
+    'GCP',
+    'AWS',
+    'Azure',
+    'Python',
+    'Kubernetes',
+    'Docker',
+    'Linux',
+    'Incident Management',
+    'Observability',
+    'GitOps',
+  ],
   experience: [
     {
       company: 'BigPay',
