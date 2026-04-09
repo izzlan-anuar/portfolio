@@ -18,15 +18,15 @@ jobs:
         run: |
           git config --global user.name "Izzlan Anuar"
           git config --global user.email "eizlan09@gmail.com"
-          
+
           NUM_COMMITS=$(( ( RANDOM % 7 ) + 1 ))
           echo "Making $NUM_COMMITS commits today..."
-          
+
           for i in $(seq 1 $NUM_COMMITS)
           do
             echo "Contribution #$i on $(date)" > last_contribution.txt
             git add last_contribution.txt
             git commit -m "chore: daily contribution $i/7 [skip ci]"
           done
-          
+
           git push
