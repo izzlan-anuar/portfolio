@@ -1,15 +1,15 @@
 export const siteConfig = {
   name: 'Izzlan Anuar',
-  title: 'Tech Support Engineer',
+  title: 'Tech Support | Cloud | SRE | DevOps Engineer',
   description: 'Portfolio website of Izzlan Anuar',
   accentColor: '#1d4ed8',
   social: {
     email: 'eizlan09@gmail.com',
     linkedin: 'https://linkedin.com/in/muhammad-izzlan-917707200',
-    github: 'https://github.com/beginnerIzz',
+    github: 'https://github.com/izzlan-anuar',
   },
   aboutMe:
-    'I love solving problems, automate things and learn new technologies but among all I prefer travelling the world',
+    'I’m a problem-solver and tech enthusiast at heart, driven by a passion for automating complex systems and exploring cutting-edge tools. I focus on setting up proactive observability and robust monitoring to keep uptime high and operational toil low. Ultimately, my goal is to transform infrastructure into a reliable, zero-downtime',
   skills: [
     'GCP',
     'AWS',
@@ -108,12 +108,18 @@ export const siteConfig = {
   education: [
     {
       school: 'Multimedia University (MMU)',
-      degree: 'Bachelor of Computer Science (Data Science)',
-      dateRange: '2019 - 2021',
+      degree: 'Master of Information Technology (Artificial Intelligence)',
+      dateRange: '2026 - Present (Part Time)',
       achievements: [
-        /*"Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",*/
+        /**/
+      ],
+    },
+    {
+      school: 'Multimedia University (MMU)',
+      degree: 'Bachelor of Computer Science (Data Science)',
+      dateRange: '2018 - 2021',
+      achievements: [
+        /**/
       ],
     },
   ],
